@@ -19,7 +19,7 @@
         <div id="controler">
             <div id="buttons">
                 <button data-backword id="previous-audio"><i class="fa-solid fa-backward"></i></button>
-                <button data-play="false" id="play-pause" ><i class="fa-solid fa-play"></i></button>
+                <button data-toggle-player id="play-pause" class="play" ><i class="fa-solid fa-play"></i></button>
                 <button data-forword id="next-audio"><i class="fa-solid fa-forward"></i></button>
             </div>
             <div id="audio-track">
@@ -27,8 +27,7 @@
             </div>
         </div>
         <figure>
-            <audio id="audio-player">
-                <source src="./mixkit-farm-animals-in-the-morning-7.wav" type="audio/wav">
+            <audio id="audio-player" src="./mixkit-farm-animals-in-the-morning-7.wav">
                 Audio fomrat not supported
             </audio>
         </figure>

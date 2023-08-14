@@ -4,7 +4,8 @@
 }
 
 :root {
-    --handle-position : 0%;
+    --audio-played : 0%;
+    --audio-playable : 0%;
 }
 
 
@@ -98,7 +99,15 @@ button:active {
 #audio-track::before {
     content: "";
     height: 100%;
-    width: var(--handle-position);
+    width: var(--audio-playable);
+    position: absolute;
+    background-color: white;
+}
+
+#audio-track::after {
+    content: "";
+    height: 100%;
+    width: var(--audio-played);
     position: absolute;
     background-color: red;
 }
@@ -109,7 +118,7 @@ button:active {
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     background-color: red;
-    left: var(--handle-position);
+    left: var(--audio-played);
 
     translate: -50%;
 }
